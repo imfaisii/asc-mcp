@@ -26,7 +26,11 @@ jobs:
         run: bun run generate
 
       - name: Check for catalog drift
-        run: git diff --exit-code generated/
+        run: |
+          git diff --exit-code generated/tools.json
+          git show HEAD:generated/manifest.json | jq 'del(.generatedAt)' > /tmp/manifest-head.json
+          jq 'del(.generatedAt)' generated/manifest.json > /tmp/manifest-now.json
+          diff -u /tmp/manifest-head.json /tmp/manifest-now.json
 
       - name: Smoke test (offline)
         run: bun run smoke
