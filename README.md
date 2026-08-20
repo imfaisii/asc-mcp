@@ -7,6 +7,7 @@
 **The complete App Store Connect API, as an MCP server.**
 1,263 operations generated straight from Apple's official OpenAPI specification, exposed to Claude Code, Claude Desktop, Cursor and every other Model Context Protocol client through just **4 token-efficient tools**.
 
+[![CI](https://img.shields.io/github/actions/workflow/status/imfaisii/asc-mcp/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/imfaisii/asc-mcp/actions/workflows/ci.yml)
 [![Model Context Protocol](https://img.shields.io/badge/Model_Context_Protocol-server-0A7CFF?style=flat-square)](https://modelcontextprotocol.io)
 [![App Store Connect API 4.4.1](https://img.shields.io/badge/App_Store_Connect_API-4.4.1-000000?style=flat-square&logo=apple&logoColor=white)](https://developer.apple.com/documentation/appstoreconnectapi)
 [![1263 operations](https://img.shields.io/badge/operations-1263-1f6feb?style=flat-square)](#coverage-every-app-store-connect-resource)
