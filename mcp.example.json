@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "app-store-connect": {
+      "command": "bun",
+      "args": [
+        "run",
+        "/ABS/PATH/to/asc-mcp/src/index.ts"
+      ],
+      "env": {
+        "ASC_ISSUER_ID": "your-issuer-uuid",
+        "ASC_KEY_ID": "your-key-id",
+        "ASC_PRIVATE_KEY_PATH": "/ABS/PATH/to/AuthKey_XXXXXXXXXX.p8"
+      }
+    }
+  }
+}

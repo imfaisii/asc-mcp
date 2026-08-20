@@ -1,0 +1,81 @@
+{
+  "name": "app-store-connect-mcp",
+  "version": "1.1.0",
+  "description": "App Store Connect MCP server — the full App Store Connect API (1263 operations, generated from Apple's official OpenAPI spec) exposed to Claude, Cursor and any MCP client through 4 token-efficient meta-tools.",
+  "license": "MIT",
+  "author": "imfaisii",
+  "homepage": "https://github.com/imfaisii/asc-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imfaisii/asc-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imfaisii/asc-mcp/issues"
+  },
+  "type": "module",
+  "bin": {
+    "asc-mcp": "./src/index.ts",
+    "dp-asc": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "scripts",
+    "generated",
+    "openapi",
+    "mcp.example.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "app-store-connect",
+    "app-store-connect-api",
+    "appstoreconnect",
+    "apple",
+    "ios",
+    "app-store",
+    "testflight",
+    "xcode-cloud",
+    "claude",
+    "claude-code",
+    "claude-desktop",
+    "cursor",
+    "anthropic",
+    "ai-agent",
+    "llm-tools",
+    "openapi",
+    "bun",
+    "typescript",
+    "in-app-purchase",
+    "subscriptions",
+    "game-center",
+    "app-review",
+    "provisioning-profiles",
+    "certificates",
+    "sales-reports",
+    "ios-automation",
+    "app-store-automation",
+    "asc"
+  ],
+  "scripts": {
+    "generate": "bun run scripts/generate-tools.ts",
+    "start": "bun run src/index.ts",
+    "smoke": "bun run scripts/smoke.ts",
+    "typecheck": "tsc --noEmit",
+    "live": "bun run scripts/live-check.ts"
+  },
+  "engines": {
+    "bun": ">=1.1.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "jose": "^6.0.11",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.8.2"
+  }
+}
